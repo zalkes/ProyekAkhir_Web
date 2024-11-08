@@ -9,4 +9,4 @@ Proyek akhir ini adalah website yang bertemakan Sistem Reservasi Hotel. Website 
 
 Link Website: bintang7.wuaze.com
 
-Manual Book : 
+Manual Book : https://drive.google.com/file/d/1lptAVlUg6rF2MGpqLlx_fCUYC314_1r6/view?usp=drive_link
