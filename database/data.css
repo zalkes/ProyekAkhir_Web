@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/pexels-boonkong-boonpeng-442952-1134176.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 12px;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #6be1f8;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+#tambah {
+    background-color: rgb(4, 171, 4);
+    color: white;
+    border: none;
+}
+
+#refresh {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+}
+
+#logout {
+    background-color: rgb(255, 55, 55);
+    color: white;
+    border: none;
+}
+
+#ubah {
+    background-color: rgba(244, 179, 0, 0.904);
+    color: white;
+    padding: 5px 10px;
+}
+
+#hapus {
+    background-color: rgb(255, 55, 55);
+    color: white;
+    padding: 5px 10px;
+}
+
+#tambah:hover, #refresh:hover, #logout:hover, #ubah:hover, #hapus:hover {
+    background-color: #838383;
+    color: black;
+}
+
+#daftar_pengguna {
+    background-color: whitesmoke;
+    border : none;
+}
+
+.search {
+    display: inline-block;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    border-radius: 100px;
+}
+
+.search input[type="text"] {
+    width: 200%;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.search button {
+    display: none;
+}
+
+.search:focus {
+    border-color: #00b4d8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
+}
+
+@media (max-width: 992px) {
+    body {
+        margin: 20px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 20px 20px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    a {
+        padding: 8px 12px;
+    }
+
+    #ubah, #hapus {
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    a {
+        padding: 6px 10px;
+    }
+
+    #ubah, #hapus {
+        padding: 3px 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    a {
+        padding: 4px 8px;
+    }
+
+    #ubah, #hapus {
+        padding: 2px 4px;
+    }
+
+    .search input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+}

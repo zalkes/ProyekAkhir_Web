@@ -1,0 +1,536 @@
+body {
+    margin: 20px;
+}
+
+.hamburger-admin{
+    height: 50px;
+    width: 50px;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 5px lightblue solid;
+    z-index: 999;
+    margin-left: 20px;
+}
+
+.hamburger-admin:hover{
+    background-color: grey;
+}
+
+.hamburger-admin span{
+    background-color: black;
+    height: 5px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+    border-radius: 2px;
+}
+
+.hamburger-admin span:nth-child(1){
+    top: 25%;
+}
+
+.hamburger-admin span:nth-child(3){
+    top: 75%;
+}
+
+.menu-sidebar-admin{
+    background-color: #ebf4f6;
+    margin-top: 100px;
+    height: 480px;
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: .3s ease;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    z-index: 999;
+}
+
+.menu-sidebar-admin.active{
+    left: 0;
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-sidebar{
+    text-align: left;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.list-sidebar:hover{
+    background-color: #00b4d8;
+    color: white;
+}
+
+.menu-sidebar-admin a {
+    color: black;
+    border: none;
+    text-decoration: none;
+    width: 0px;
+    height: 0px;
+    padding: 0;
+}
+
+.menu-sidebar-admin a:hover{
+    background-color: white;
+    width: 0px;
+    height: 0px;
+    padding: 0;
+} 
+
+.menu-sidebar-admin i {
+    font-size: 20px;
+    margin-right: 5px;
+    color: black;
+}
+
+.admin-profile{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.close-sidebar{
+    font-size: 30px;
+    color: black;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.close-sidebar:hover{
+    background-color: white;
+    color: black;    
+}
+
+.table-container{
+    margin: 20px 20px 40px 20px;
+    overflow-x: auto;
+    background-color: rgba(255, 255, 255, 0.626);
+    border-radius: 15px;
+    scrollbar-width: none;
+    padding: 20px;
+}
+
+.manipulation-data{
+    display: flex;
+    margin: 40px 60px 0 60px;
+    gap: 30px;
+}
+
+.form-room-container{
+    margin: 60px 80px;
+}
+
+.room-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.data-picture{
+    text-align: center;
+    padding: 8px;
+    border: 2px#15292B solid;
+}
+
+.photo-container{
+    display: inline-block;
+    font-size: 20px;
+    
+}
+
+input[type="file"]{
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.input-photo{
+    display: inline-block;
+    width: 450px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.62);
+    border: 2px #15292B solid;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #15292B;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.room-preview{
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.title-pict{
+    margin-top: 75px;
+    text-align: center;
+}
+
+.room-data{
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    border: 2px black solid;
+    height: 350px;
+}
+
+.room-data i{
+    color: lightblue;
+    margin: 0 5px;
+}
+
+.room-type{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin: 40px;
+}
+
+
+.form-room{
+    width: 200px;
+    height: 20px;
+    border: 1px lightblue solid;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.form-amount{
+    width: 100px;
+    height: 20px;
+    border: 1px lightblue solid;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+.form-price{
+    width: 400px;
+    height: 20px;
+    border: 1px lightblue solid;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.amount{
+    font-size: 12px;
+}
+
+.descript-container{
+    background-color: white;
+    border-radius: 15px;
+    border: 5px black;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.form-descript{
+    width: 100%;
+    display: flex;
+    height: 30px;
+}
+
+.add-room{
+    margin-left: 0;
+    background-color: lightskyblue;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: 2px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-button{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.room-update{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.dashboard-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.dashboard-card{
+    background-color: white;
+    border-radius: 15px;
+    border: 2px black;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card i{
+    font-size: 100px;
+}
+
+.dashboard-card p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dashboard-card #pengguna{
+    color: #00b4d8;
+}
+
+.dashboard-card #kamar{
+    color: #d5b527;
+}
+
+.dashboard-card #pesanan{
+    color: #f72585;
+}
+
+.dashboard-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.manipulation-data {
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.search {
+    flex-grow: 1;
+    min-width: 350px;
+    max-width: 600px;
+}
+
+.search input[type="text"] {
+    width: calc(100% - 70px);
+}
+
+.menu-sidebar-admin {
+    width: 260px;
+}
+
+@media screen and (max-width: 768px) {
+    .manipulation-data {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #refresh, #tambah {
+        text-align: center;
+        width: 100px;
+        margin-left: 30%;
+    }
+    
+    .table-container {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    td img {
+        max-width: 100px;
+        height: auto;
+    }
+    
+    td, th {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .action-button {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hamburger-admin{
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-sidebar-admin {
+        width: 200px; 
+        height: 400px;
+    }
+
+    .list-sidebar {
+        font-size: 10px;
+        padding: 6px 8px; 
+    }
+
+    .admin-profile {
+        width: 70px;
+        height: 70px;
+    }
+
+    .dashboard-card {
+        width: 220px;
+        height: 190px;
+    }
+
+    .form-room-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .room-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .descript-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}   
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    td img {
+        max-width: 80px;
+    }
+    
+    td, th {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .hamburger-admin{
+        width: 30px;
+        height: 30px;
+    }
+
+    .photo-container{
+        width: 200px;
+        height: 200px;
+    }
+
+    .input-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .descript-container{
+        width: 170px;
+        height: 100px;
+    }
+
+    .form-descript{
+        width: 100%;
+        display: flex;
+        height: 60px;
+    }
+
+    .room-type{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .room-data{
+        width: 200px;
+        height: 500px;
+    }
+
+    .form-room{
+        width: 85%;
+    }
+
+    .form-price{
+        width: 70%;
+    }
+
+    .descript-container{
+        width: 70%;
+        height: 100px;
+        margin: 0;
+    }
+
+    .descript-container label{
+        margin-top: 0;
+    }
+
+    .label-descript{
+        width: 30%;
+    }
+
+    .add-room{
+        margin-top: 10px;
+    }
+}

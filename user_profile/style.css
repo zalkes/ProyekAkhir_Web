@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+}
+
+nav.container.navbar{
+    margin: 0px auto;
+}
+
+.container{
+    display: flex;
+    margin: 50px 100px;
+}
+
+.profile{
+    flex: 1;
+    background-color: #fff;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  
+    border-radius: 5px;
+    height: max-content;  
+}
+
+.profile-header{
+    display: flex;
+    margin-left: 15px;
+}
+
+.profile-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    border:rgba(0, 0, 0, 0.1) 0.5px solid;
+}
+
+.profile-text-container{
+    line-height: 0.5;
+}
+
+.profile-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.profile-email{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.menu{
+    margin: 0 20px;
+}
+
+.menu-link{
+    display: block;
+    text-decoration: none;
+    color: #768499;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.menu-icon{
+    margin-right: 10px;
+}
+
+.menu-link.active{
+    color: #fff;
+    background-color: #2b6cb0;
+}
+
+.menu-link:hover{
+    background-color: #f0f4f8;
+    color: #1e293b;
+}
+
+.menu-link.active:hover{
+    background-color: #2b6cb0;
+    color: #fff;
+}
+
+.account {
+    display: none;
+}
+
+.account.active {
+    display: block;
+}
+
+.account{
+    flex: 2;
+    margin-left: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: max-content;
+}
+
+.account-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #768499;
+}
+
+.account-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #1e293b;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.btn-container{
+    margin-right: 5px;
+}
+
+.btn-cancel{
+    width: 8em;
+    height: 3em;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #768499;
+    border-radius: 2em;
+    color: #1e293b;
+    font-weight: bold;
+    margin-right: 5px;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-cancel:hover{
+    background-color: #f0f4f8;
+}
+
+.btn-save{
+    width: 8em;
+    height: 3em;
+    background-color: #2b6cb0;
+    cursor: pointer;
+    border: 1px solid #2b6cb0;
+    border-radius: 2em;
+    color: #fff;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-save:hover{
+    background-color: #2c5282;
+}
+
+.account-edit{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.input-container{
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #768499;
+}
+
+.input-container input{
+    height: 41px;
+    border: 1.5px solid #768499;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+}
+
+.input-container input:focus{
+    outline: none;
+    border: 1.5px solid #2b6cb0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container{
+    overflow-x: scroll;
+}
+
+th{
+    background-color: #f0f4f8;
+    color: #1e293b;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+td{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #1e293b;
+    padding: 10px;
+    border-bottom: 1px solid #f0f4f8;
+    white-space: nowrap;
+}
+
+td:last-child{
+    font-size: large;
+    margin: 0 auto;
+}
+
+td a{
+    text-decoration: none;
+    color: #2b6cb0;
+}
+
+td a:hover{
+    text-decoration: underline;
+}
+
+.dark-mode .profile{
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.dark-mode .account, .dark-mode .account-title{
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.dark-mode .input-container input{
+    color: #fff;
+    border: 1.5px solid #768499;
+    background-color: #252525;
+}
+
+.dark-mode th{
+    background-color: #252525;
+    color: #fff;
+}
+
+.dark-mode td{
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+
+    .profile{
+        margin: 0;
+    }
+
+    .account{
+        margin: 0;
+    }
+
+    .account-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account-title{
+        margin-left: 0;
+    }
+
+    .btn-container{
+        margin-right: 0;
+    }
+
+    .btn-cancel{
+        margin-right: 0;
+    }
+
+    .account-edit{
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .input-container{
+        width: 100%;
+        margin: 0;
+    }
+
+    .input-container label{
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        color: #768499;
+    }
+
+    .input-container input{
+        height: 25px;
+        border: 1.5px solid #768499;
+        border-radius: 5px;
+        padding: 5px;
+        color: #768499;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .input-container input:focus{
+        outline: none;
+        border: 1.5px solid #2b6cb0;
+    }
+
+    .table-container{
+        overflow-x: scroll;
+    }
+
+    /* table {
+        display: table;
+    }
+
+    th, td {
+        display: none;
+    }
+
+    th:nth-child(1), th:nth-child(2), th:nth-child(5), th:nth-child(6), th:nth-child(8),
+    td:nth-child(1), td:nth-child(2), td:nth-child(5), td:nth-child(6), td:nth-child(8){
+        display: table-cell;
+    } */
+}
